@@ -1,0 +1,19 @@
+{
+  "name": "Flask-Chat",
+  "homepage": "https://github.com/RayFerr000/Flask-Chat",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.1.0",
+    "bootstrap": "^3.3.6"
+  }
+}
