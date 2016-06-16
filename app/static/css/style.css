@@ -1,0 +1,18 @@
+.header {
+    height: 100px;
+    background-color: #008bab;
+    margin-bottom: 50px;
+}
+
+.thread {
+    border: 1px solid #444444;
+    height: 500px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.inputBox input {
+    width: 100%;
+    border: 1px solid #444444;
+    border-radius: 4px;
+}
