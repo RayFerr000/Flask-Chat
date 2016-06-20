@@ -1,3 +1,6 @@
+#body {
+    background: #eee;
+}
 .header {
     height: 100px;
     background-color: #008bab;
@@ -6,6 +9,7 @@
 
 .thread {
     border: 1px solid #444444;
+    background: #fff;
     height: 500px;
     border-radius: 4px;
     margin-bottom: 5px;

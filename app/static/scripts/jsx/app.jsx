@@ -1,26 +1,6 @@
-
-
-class Header extends React.Component {
-  render() {
-    return <div className="header"></div>;
-  }
-}
-
-class Thread extends React.Component {
-  render() {
-    return <div className="thread"></div>;
-  }
-}
-
-class InputBox extends React.Component {
-  render() {
-    return (
-        <div className="inputBox">
-            <input className="input" placeholder="Type your message here"/>
-        </div>
-    );
-  }
-}
+import Header from './header.jsx';
+import Thread from './thread.jsx';
+import InputBox from './input-box.jsx';
 
 class App extends React.Component {
     render() {
