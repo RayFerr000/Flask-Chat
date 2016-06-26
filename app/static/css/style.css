@@ -7,6 +7,15 @@
     background-color: #008bab;
     margin-bottom: 50px;
     padding-top: 9px;
+    -webkit-transition: height 3s;
+    transition: height;
+}
+.header-extended {
+    text-align: center;
+    height: 100px;
+    background-color: #008bab;
+    margin-bottom: 50px;
+    padding-top: 9px;
 }
 
 .header button {
