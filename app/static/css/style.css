@@ -28,6 +28,12 @@
     height: 500px;
     border-radius: 4px;
     margin-bottom: 5px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.messages {
+    text-align: right;
 }
 
 .inputBox input {
