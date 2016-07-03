@@ -1,10 +1,29 @@
-import Form from './form.jsx';
 class Signup extends React.Component {
     render() {
-      const FORM_INPUT_LABELS = ['Email','Username','Password','Confirm Password'];
+      if (this.props.isHidden) return(<div></div>);
       return (
         <div className="signup">
-            <Form labels={FORM_INPUT_LABELS} />
+            <div className='row'>
+                <div className='col-sm-6 inputField'>
+                    <label>Email</label>
+                    <input></input>
+                </div>
+                <div className='col-sm-6 inputField'>
+                    <label>Username</label>
+                    <input></input>
+                </div>
+            </div>
+            <div className='row'>
+                <div className='col-sm-6 inputField'>
+                    <label>Password</label>
+                    <input></input>
+                </div>
+                <div className='col-sm-6 inputField'>
+                    <label>Confirm Password</label>
+                    <input></input>
+                </div>
+            </div>
+            <button className="btn white" >Submit</button>
         </div>
       );
     }

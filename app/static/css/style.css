@@ -1,34 +1,68 @@
 #body {
     background: #eee;
 }
-.header {
-    text-align: center;
+.header, .header-extended-large, .header-extended-medium {
+    text-align: right;
+    padding-right: 10px;
     height: 55px;
     background-color: #008bab;
     margin-bottom: 50px;
     padding-top: 9px;
-    -webkit-transition: height 3s;
-    transition: height;
+    transition-duration: 1s;
+    transition-property: height;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
 }
-.header-extended {
-    text-align: center;
-    height: 100px;
-    background-color: #008bab;
-    margin-bottom: 50px;
-    padding-top: 9px;
+.header-extended-large {
+    height: 200px;
+}
+.header-extended-medium {
+    height: 150px;
 }
 
-.header button {
-  color: #008bab;
-  border-color: #008bab;
+button.white {
+  position: relative;
+  color: #008bab !important;
+  border-color: #008bab !important;
+  background-color: #fff !important;
+  cursor: pointer !important;
 }
-.header button:hover {
-  color: #008bab;
+button:focus {
+  color: #008bab !important;
+  border-color: #008bab !important;
+  cursor: pointer !important;
+}
+button:hover {
+  color: #008bab !important;
   background-color: #fff;
-  border-color: #008bab;
+  border-color: #008bab !important;
+  cursor: pointer !important;
 }
-.header button.right-margin {
+button.right-margin {
   margin-right: 20px;
+}
+
+label {
+    display: block;
+    width: 200px;
+    text-align: -webkit-auto;
+    color: #fff;
+}
+.signup, .login {
+    max-width: 40%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.inputField {
+    text-align: left;
+}
+
+.inputField input {
+    width: 240px;
 }
 
 .thread {
@@ -37,6 +71,7 @@
     height: 500px;
     border-radius: 4px;
     margin-bottom: 5px;
+    margin-top: 100px;
     padding: 10px;
     overflow-y: auto;
 }
