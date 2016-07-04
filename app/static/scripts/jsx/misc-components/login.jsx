@@ -1,8 +1,7 @@
 class Login extends React.Component {
     render() {
-      if (this.props.isHidden) return(<div></div>);
       return (
-        <div className="login">
+        <div className={(this.props.isHidden) ? 'hide' : 'login' }>
             <div className='row'>
                 <div className='col-sm-6 inputField'>
                     <label>Email or Username</label>

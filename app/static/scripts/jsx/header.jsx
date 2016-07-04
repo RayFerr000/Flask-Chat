@@ -26,6 +26,12 @@ class Header extends React.Component {
         this.setState(obj);
     }
 
+    signupUser = (email, username, password) => {
+        console.log(email);
+        console.log(username);
+        console.log(password);
+    }
+
     render() {
         let headerClass = 'header';
         if (this.state.extendHeader && this.state.displaySignupForm) {
@@ -38,7 +44,7 @@ class Header extends React.Component {
                 <button className="btn white right-margin" onClick={this.displayForm.bind(this, 'displaySignupForm','displayLoginForm')}>Sign Up</button>
                 <button className="btn  white" onClick={this.displayForm.bind(this, 'displayLoginForm','displaySignupForm')}>Login</button>
                 <Login  isHidden={!this.state.displayLoginForm}/>
-                <Signup isHidden={!this.state.displaySignupForm}/>
+                <Signup isHidden={!this.state.displaySignupForm} signupUser={this.signupUser}/>
             </div>
          );
     }

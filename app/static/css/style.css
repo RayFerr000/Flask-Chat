@@ -85,3 +85,9 @@ label {
     border: 1px solid #444444;
     border-radius: 4px;
 }
+input.red {
+    border-color: red;
+}
+.hide {
+    display:none;
+}
